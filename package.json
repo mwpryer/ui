@@ -5,10 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "shadcn build && tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "registry:build": "shadcn build"
   },
   "dependencies": {
     "@base-ui/react": "^1.2.0",

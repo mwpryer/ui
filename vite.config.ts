@@ -5,6 +5,7 @@ import { defineConfig } from "vite";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.GITHUB_ACTIONS ? "/ui/" : "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

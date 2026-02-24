@@ -1,0 +1,185 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "mwp13",
+  "homepage": "https://mwpryer.github.io/ui",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "description": "Utility functions including cn() for className merging.",
+      "dependencies": ["clsx", "tailwind-merge"],
+      "files": [
+        {
+          "path": "src/lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "description": "An alert dialog component built on Base UI with overlay, portal, and action buttons.",
+      "dependencies": ["@base-ui/react"],
+      "registryDependencies": ["utils", "button"],
+      "files": [
+        {
+          "path": "src/components/ui/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "description": "A badge component with multiple variants, built on Base UI.",
+      "dependencies": ["@base-ui/react", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/badge.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "description": "A button component with multiple variants and sizes, built on Base UI.",
+      "dependencies": ["@base-ui/react", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "description": "A card component with header, content, footer, and other sub-components.",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "description": "A combobox component built on Base UI with search, multi-select, and chips support.",
+      "dependencies": ["@base-ui/react", "@tabler/icons-react"],
+      "registryDependencies": ["utils", "button", "input-group"],
+      "files": [
+        {
+          "path": "src/components/ui/combobox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "description": "A dropdown menu component built on Base UI with submenus, checkboxes, and radio items.",
+      "dependencies": ["@base-ui/react", "@tabler/icons-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "description": "A field component for structured form layouts with labels, descriptions, and errors.",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "label", "separator"],
+      "files": [
+        {
+          "path": "src/components/ui/field.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "description": "An input component built on Base UI.",
+      "dependencies": ["@base-ui/react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "description": "An input group component for combining inputs with addons and buttons.",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils", "button", "input", "textarea"],
+      "files": [
+        {
+          "path": "src/components/ui/input-group.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "description": "A label component for form elements.",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "description": "A select component built on Base UI with scrollable content and grouped items.",
+      "dependencies": ["@base-ui/react", "@tabler/icons-react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "description": "A separator component built on Base UI.",
+      "dependencies": ["@base-ui/react"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "description": "A textarea component for multi-line text input.",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
